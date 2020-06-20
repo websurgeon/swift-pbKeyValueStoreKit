@@ -1,0 +1,21 @@
+### macOS ###
+
+## General
+
+.DS_Store
+
+
+### SwiftPM ###
+
+Packages
+.build/
+xcuserdata
+DerivedData/
+*.xcodeproj
+
+
+### Xcode ###
+
+## User settings
+xcuserdata/
+
