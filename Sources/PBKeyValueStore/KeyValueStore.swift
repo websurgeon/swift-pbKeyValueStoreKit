@@ -14,3 +14,7 @@ public protocol KeyValueStore {
     
     func deleteAllValues() throws
 }
+
+public enum KeyValueStoreError: Error {
+    case noValueFound(key: String)
+}

@@ -10,4 +10,12 @@ final class PBKeyValueKitTests: XCTestCase {
     func test_KeyValueStore_isPublic() {
         typealias Store = KeyValueStore
     }
+    
+    func test_KeyValueStoreError_isPublic() {
+        typealias StoreError = KeyValueStoreError
+    }
+    
+    func test_InMemoryKeyValueStore_isPublic() {
+        typealias Store = InMemoryKeyValueStore
+    }
 }
