@@ -20,6 +20,10 @@ let package = Package(
             targets: ["PBKeyValueStore"]),
         
         .library(
+            name: "PBKeyValueStoreKeychain",
+            targets: ["PBKeyValueStore"]),
+        
+        .library(
             name: "PBKeyValueStoreTesting",
             targets: ["PBKeyValueStoreTesting"]),
         
@@ -35,7 +39,8 @@ let package = Package(
             name: "PBKeyValueKit",
             dependencies: [
                 "PBKeyValueStore",
-                "PBKeyValueStoreInMemory"
+                "PBKeyValueStoreInMemory",
+                "PBKeyValueStoreKeychain"
             ]),
         .testTarget(
             name: "PBKeyValueKitTests",
@@ -58,6 +63,14 @@ let package = Package(
             name: "PBKeyValueStoreInMemoryTests",
             dependencies: ["PBKeyValueStoreInMemory"]),
         
+        .target(
+            name: "PBKeyValueStoreKeychain",
+            dependencies: ["PBKeyValueStore"]),
+        .testTarget(
+            name: "PBKeyValueStoreKeychainTests",
+            dependencies: ["PBKeyValueStoreKeychain"]),
+        
+            
         .target(
             name: "PBKeyValueStoreTesting",
             dependencies: ["PBKeyValueStore"]),

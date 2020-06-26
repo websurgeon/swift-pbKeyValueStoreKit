@@ -17,4 +17,5 @@ public protocol KeyValueStore {
 
 public enum KeyValueStoreError: Error {
     case noValueFound(key: String)
+    case unhandled
 }

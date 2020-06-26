@@ -7,10 +7,16 @@ Each implementation provides a different storage mechanism:
 - InMemoryKeyValueStore
     Uses an in memory dictionary to store values.
 
+- KeychainKeyValueStore
+    Secure storage backed by Apples Keychain api
+    
+### PBKeyValueStoreTesting
+
+- MockKeyValueStore
+- StubKeyValueStore
+
 ### Future Implementations:
 
 - UserDefaultsKeyValueStore
    Backed by UserDefaults
    
-- KeychainKeyValueStore
-    Secure storage backed by Apples Keychain api
